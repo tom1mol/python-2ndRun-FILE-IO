@@ -1,0 +1,35 @@
+Hello World
+
+code:
+ f = open("data.txt", "w")
+>>> f.write("Hello World")
+11
+>>> f.flush()
+>>> f.close()
+
+
+Appended Line 1 
+Appended Line 2
+Appended Line 3
+
+code:       append starts where previous finished
+>>> f = open("data.txt", "a")
+>>> f.write("Appended Line 1 \n")
+17
+>>> f.write("Appended Line 2\n")
+16
+>>> f.write("Appended Line 3\n")
+16
+>>> f.close()
+>>> 
+
+ f = open("data.txt", "r")
+>>> lines = f.read()
+>>> print(lines)
+
+output:
+Hello World
+
+Appended Line 1 
+Appended Line 2 
+Appended Line 3 
